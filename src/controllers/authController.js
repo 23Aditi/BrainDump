@@ -46,7 +46,7 @@ export const register = async(req,res)=>{
 
         await user.save();
 
-        const verificationLink = `http://localhost:5000/api/auth/verify-email?token=${verificationToken}`;
+        const verificationLink = `https://braindump-cx8a.onrender.com/api/auth/verify-email?token=${verificationToken}`;
 
         // ===== TEXT VERSION =====
         const emailText = `
